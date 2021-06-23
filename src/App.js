@@ -9,12 +9,6 @@ const App = () =>
 			<div className="box b3 "/>
 			<div className="box b4 "/>
 		</div>
-		<div className="container-shadow">
-			<div className="box ba1 "/>
-			<div className="box ba2 "/>
-			<div className="box ba3 "/>
-			<div className="box ba4 "/>
-		</div>
 	</div>
 	;
 
