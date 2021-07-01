@@ -4,10 +4,8 @@ import './App.css';
 const App = () =>
 	<div className="App">
 		<div className="pendulum">
-			<div className="container">
-				<div className="line"/>
-				<div className="circle"/>
-			</div>
+			<div className="line"/>
+			<div className="circle"/>
 		</div>
 	</div>;
 
