@@ -1,18 +1,11 @@
 import { React } from 'react';
 import './App.css';
+import Logo from './components/logo';
+// import Pendulum from './components/pendulum/index.js';
 
 const App = () =>
 	<div className="App">
-		<div className="pendulum">
-			<div className="line"/>
-			<div className="circle"/>
-		</div>
+		{ Logo() }
 	</div>;
 
 export default App;
-
-// <div className="container">
-// <div className="box b1 "/>
-// <div className="box b2 "/>
-// <div className="box b3 "/>
-// <div className="box b4 "/>
