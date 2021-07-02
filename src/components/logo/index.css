@@ -4,6 +4,7 @@
 	left: 0px;
 	border-radius: 40px 60px 0px 60px;
 	box-shadow: 338px 44px 8px -15px #1C6D64;
+	animation: b1 5s;
 }
 
 .b2 {
@@ -12,6 +13,7 @@
 	left: 190px;
 	border-radius: 60px 40px 60px 00px;
 	box-shadow: 308px 44px 8px -15px #1C6D64;
+	animation: b2 3s;
 }
 
 .b3 {
@@ -20,6 +22,7 @@
 	left: 0px;
 	border-radius: 60px 0px 40px 60px;
 	box-shadow: 338px 14px 8px -15px #1C6D64;
+	animation: b3 3s;
 }
 
 .b4 {
@@ -28,27 +31,93 @@
 	left: 190px;
 	border-radius: 0px 60px 40px 60px;
 	box-shadow: 308px 14px 8px -15px #1C6D64;
+	animation: b4 3s;
 }
 
 .box {
 	position: absolute;
 	height: 170px;
 	width: 170px;
-	/* animation: scale infinite 5s linear; */
 }
 
 .logo {
 	position: absolute;
-	width: 360px;
-	height: 360px;
+	width: 460px;
+	height: 460px;
 	left: calc(50% - 180px);
 	top: calc(50% - 180px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.box {
-		animation: scale infinite 5s linear;
-		}
+.container{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+	.logo {
+		animation: scale infinite 20s linear;
+	}	} */
+
+@keyframes b1 {
+	0% {
+		top: 0px;
+		left: 0px;
+		border-radius: 0px;
+		margin-top: 50px;
+		margin-left: 50px;
+	}
+	100% {
+		top: 100px;
+		left: 100px;
+		border-radius: 10px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+}
+
+@keyframes b1 {
+	from {
+		top:-30%;
+		left:-30%;
+	}
+	to {
+		top: 10%;
+		left: 10%;
+	}
+}
+
+@keyframes b2 {
+	from {
+		top:0%;
+		right:0%;
+	}
+	to {
+		top: 10%;
+		right: 10%;
+	}
+}
+
+@keyframes b3 {
+	from {
+		bottom:0%;
+		left:0%;
+	}
+	to {
+		bottom: 50%;
+		left: 50%;
+	}
+}
+
+@keyframes b4 {
+	from {
+		bottom:0%;
+		right:0%;
+	}
+	to {
+		bottom: 50%;
+		right: 50%;
+	}
 }
 
 @keyframes scale {
